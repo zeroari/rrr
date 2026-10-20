@@ -1,0 +1,165 @@
+
+.poster {
+    z-index: 0;
+}
+
+.poster:before {
+    background-image: url("../../blockchain_hero_bg.png") !important;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: ' ';
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    position: absolute;
+}
+
+body.poster:before {
+    position: fixed;
+}
+@media (max-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 720px) and (min-resolution: 192dpi) {
+    .poster:before {
+        background-image: url("./blockchain_hero_bg.png")!important;
+    }
+}
+
+.hover\:bg-primary-500:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(199, 38, 148, var(--tw-bg-opacity));
+}
+.hover\:bg-primary-600:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(165, 32, 122, var(--tw-bg-opacity));
+}
+.hover\:bg-gray-900:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+.hover\:bg-gray-600:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+}
+.hover\:from-primary-600:hover{
+    --tw-gradient-from: #a5207a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(165, 32, 122, 0));
+}
+.hover\:from-gray-900:hover{
+    --tw-gradient-from: #111827;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(17, 24, 39, 0));
+}
+.hover\:from-gray-600:hover{
+    --tw-gradient-from: #4b5563;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(75, 85, 99, 0));
+}
+.hover\:to-primary-500:hover{
+    --tw-gradient-to: #c72694;
+}
+.hover\:to-gray-800:hover{
+    --tw-gradient-to: #1f2937;
+}
+.hover\:to-gray-500:hover{
+    --tw-gradient-to: #6b7280;
+}
+.hover\:text-gray-300:hover{
+    --tw-text-opacity: 1;
+    color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+.hover\:text-white:hover{
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.hover\:text-primary-500:hover{
+    --tw-text-opacity: 1;
+    color: rgba(199, 38, 148, var(--tw-text-opacity));
+}
+.hover\:text-pink-500:hover{
+    --tw-text-opacity: 1;
+    color: rgba(236, 72, 153, var(--tw-text-opacity));
+}
+.hover\:text-gray-400:hover{
+    --tw-text-opacity: 1;
+    color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+.hover\:text-primary-300:hover{
+    --tw-text-opacity: 1;
+    color: rgba(222, 123, 184, var(--tw-text-opacity));
+}
+.hover\:text-primary-600:hover{
+    --tw-text-opacity: 1;
+    color: rgba(165, 32, 122, var(--tw-text-opacity));
+}
+.hover\:text-gray-500:hover{
+    --tw-text-opacity: 1;
+    color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+.hover\:text-primary-100:hover{
+    --tw-text-opacity: 1;
+    color: rgba(240, 190, 220, var(--tw-text-opacity));
+}
+.hover\:text-primary-50:hover{
+    --tw-text-opacity: 1;
+    color: rgba(247, 222, 239, var(--tw-text-opacity));
+}
+.hover\:text-primary-200:hover{
+    --tw-text-opacity: 1;
+    color: rgba(232, 157, 202, var(--tw-text-opacity));
+}
+.hover\:opacity-75:hover{
+    opacity: 0.75;
+}
+.group:hover .group-hover\:border-primary-700{
+    --tw-border-opacity: 1;
+    border-color: rgba(131, 26, 98, var(--tw-border-opacity));
+}
+.group:hover .group-hover\:border-primary-600{
+    --tw-border-opacity: 1;
+    border-color: rgba(165, 32, 122, var(--tw-border-opacity));
+}
+.group:hover .group-hover\:border-primary-400{
+    --tw-border-opacity: 1;
+    border-color: rgba(211, 86, 166, var(--tw-border-opacity));
+}
+#wrapper{
+  overflow: hidden;
+}
+#container{
+  margin: 0;
+  position: relative;
+}
+#container div{
+  margin: 0;
+}
+
+h1 {
+    color: hsl(0, 0%, 28%);
+    font-size: 50px!important;
+    font-weight: bold!important;
+    font-family: monospace;
+    /*letter-spacing: 7px!important;*/
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+h1 {
+
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 600px;
+    }
+    100% {
+        background-position: 600px;
+    }
+}
